@@ -6,44 +6,10 @@
 
 
 
-<table>
-  <thead>
-    <tr>
-      <th>Student first name</th>
-      <th>Student last name</th>
-      <th>Birth date</th>
-      <th>Parent first name</th>
-      <th>Parent last name</th>
-      <th>Occupation</th>
-      <th>Phone number</th>
-      <th>Relative relation</th>
-      <th>Address</th>
-      <th>Med description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @applies.each do |apply| %>
-      <tr>
-        <td><%= apply.student_first_name %></td>
-        <td><%= apply.student_last_name %></td>
-        <td><%= apply.birth_date %></td>
-        <td><%= apply.parent_first_name %></td>
-        <td><%= apply.parent_last_name %></td>
-        <td><%= apply.occupation %></td>
-        <td><%= apply.phone_number %></td>
-        <td><%= apply.relative_relation %></td>
-        <td><%= apply.address %></td>
-        <td><%= apply.med_description %></td>
-        <td><%= link_to 'Show', apply %></td>
-        <td><%= link_to 'Edit', edit_apply_path(apply) %></td>
-        <td><%= link_to 'Destroy', apply, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
 <br>
 
 <%= link_to 'New Apply', new_apply_path %>
+<%= link_to 'follow u', seeall_path %>
+
