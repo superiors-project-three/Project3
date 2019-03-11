@@ -4,7 +4,10 @@ class AppliesController < ApplicationController
   # GET /applies
   # GET /applies.json
   def index
-    @applies = Apply.all
+    if current_user
+      @applies = current_user.applies
+    # @applies = Apply.all
+    end
   end
 
   # GET /applies/1
