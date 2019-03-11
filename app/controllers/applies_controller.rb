@@ -9,16 +9,20 @@ class AppliesController < ApplicationController
     # @applies = Apply.all
     end
   end
-
+  def seeall
+    @applies = Apply.where({ user_id:  current_user })
+  end
   # GET /applies/1
   # GET /applies/1.json
   def show
+
   end
 
   # GET /applies/new
   def new
     @apply = Apply.new
   end
+  
 
   # GET /applies/1/edit
   def edit

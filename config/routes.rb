@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
+  get '/applies/seeall' , to: 'applies#seeall', as: :seeall
   resources :applies
+ 
   devise_scope :user do
     
     authenticated :user do
-      root "pages#home"
+      root "applies#index"
     end
 
     unauthenticated do
