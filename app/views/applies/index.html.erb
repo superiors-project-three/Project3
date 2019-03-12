@@ -2,14 +2,30 @@
 
 <h1>Applies</h1>
 
+<head>
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+<div class="container">
+<ul class="nav nav-bg">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  </ul>
 
+  <div class="row">
+    <div class="col-6">
+     
+    <%= link_to 'New Apply', new_apply_path ,:class =>'homeFeaturesTitle font-edit'%>
+    </div>
+    <div class="col-6">
 
+    <%= link_to 'follow up', seeall_path ,:class => 'homeFeaturesTitle font-edit' %>
 
-
+    </div>
+    </div>
 
 
 <br>
 
-<%= link_to 'New Apply', new_apply_path %>
-<%= link_to 'follow u', seeall_path %>
+
 

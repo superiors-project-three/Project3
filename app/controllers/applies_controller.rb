@@ -9,6 +9,7 @@ class AppliesController < ApplicationController
     # @applies = Apply.all
     end
   end
+  
   def seeall
     @applies = Apply.where({ user_id:  current_user })
   end
