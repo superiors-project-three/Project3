@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Project2</title>
+    <title class="font-sub">Special Kids</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,13 +12,13 @@
   <body>
 
 
-  <p class="alert"><%= alert %></p>
+  <!-- <p class="alert"></p> --> 
+
+  <%alert %>
   <% if user_signed_in? %>
        hello <%= current_user.email %>
       <%= link_to 'Logout', destroy_user_session_path, method: :delete%>
-    <%else%>
-      <%= link_to 'login', new_user_session_path %>
-      <%= link_to 'sign up', new_user_registration_path %>  
+     
     <%end%>
     <%= yield %>
   </body>

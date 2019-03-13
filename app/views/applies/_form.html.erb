@@ -1,4 +1,21 @@
 
+
+
+<head>
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+<div class="container-fluid">
+<ul class="nav nav-bg img2-bg">
+  <li class="nav-item">
+    <div class="nav-link active" >
+    
+    </div>
+  </li>
+  </ul>
+  </div>
+  <div class="container pt-5 mt-5">
+ 
+
 <%= form_with(model: apply, local: true) do |form| %>
   <% if apply.errors.any? %>
     <div id="error_explanation">
@@ -11,7 +28,7 @@
       </ul>
     </div>
   <% end %>
-  <div class="form-group" >
+  <div class="form-group font-edit" >
   <div class="field" >
     <%= form.label :student_first_name %>
     <%= form.text_field :student_first_name %>
@@ -63,8 +80,9 @@
     <%= form.text_field :med_description %>
   </div>
 
-  <div class="actions ">
-    <%= form.submit %>
+  
+  <div class="actions homeFeaturesTitle">
+    <%= form.submit "Apply" ,:class =>'btn-control font-edit'%>
   </div>
   </div>
 <% end %>
