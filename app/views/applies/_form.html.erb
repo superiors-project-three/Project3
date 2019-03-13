@@ -4,17 +4,7 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 </head>
-<div class="container-fluid">
-<ul class="nav nav-bg img2-bg">
-  <li class="nav-item">
-    <div class="nav-link active" >
-    
-    </div>
-  </li>
-  </ul>
-  </div>
-  <div class="container pt-5 mt-5">
- 
+
 
 <%= form_with(model: apply, local: true) do |form| %>
   <% if apply.errors.any? %>
@@ -28,62 +18,76 @@
       </ul>
     </div>
   <% end %>
-  <div class="form-group font-edit" >
-  <div class="field" >
-    <%= form.label :student_first_name %>
-    <%= form.text_field :student_first_name %>
+
+  
+
+
+
+<div class="theBox">
+  <div class="font-edit form-row" >
+  <div class="form-group col-md-6" >
+   <label for="inputEmail4"<%= form.label :student_first_name %>
+   <input class="form-control" id="inputEmail4" <%= form.text_field :student_first_name %>
   </div>
   
 
-  <div class="field">
-    <%= form.label :student_last_name %>
-    <%= form.text_field :student_last_name %>
+  <div class="form-group col-md-6" >
+  <label for="inputEmail4"<%= form.label :student_last_name %>
+  <input class="form-control" id="inputEmail4" <%= form.text_field :student_last_name %>
+ </div>
+
+ 
+  
+
+  <div class="form-group col-md-6">
+    <label for="inputEmail4"<%= form.label :parent_first_name %>
+    <input class="form-control id="inputEmail4" <%= form.text_field :parent_first_name %>
+  </div>
+
+  <div class="form-group col-md-6">
+    <label for="inputEmail4"<%= form.label :parent_last_name %>
+    <input class="form-control id="inputEmail4" <%= form.text_field :parent_last_name %>
+  </div>
+
+  <div class="form-group col-md-2">
+    <label for="inputEmail4"<%= form.label :occupation %>
+    <input class="form-control id="inoutEmail4" <%= form.text_field :occupation %>
+  </div>
+
+  <div class="form-group col-md-2">
+    <label for="inputEmail4"<%= form.label :phone_number %>
+    <input class="form-control id="inoutEmail4"<%= form.text_field :phone_number %>
+  </div>
+
+  <div class="form-group col-md-2">
+    <label for="inputEmail4"<%= form.label :relative_relation %>
+    <input class="form-control id="inoutEmail4"<%= form.text_field :relative_relation %>
+  </div>
+
+  <div class="form-group col-md-2">
+    <label for="inputEmail4"<%= form.label :address %>
+    <input class="form-control id="inoutEmail4"<%= form.text_field :address %>
   </div>
 
   <div class="field">
-    <%= form.label :birth_date %>
+    <%= form.label :date_of_birth %>
     <%= form.date_select :birth_date %>
   </div>
-
-  <div class="field">
-    <%= form.label :parent_first_name %>
-    <%= form.text_field :parent_first_name %>
   </div>
-
-  <div class="field">
-    <%= form.label :parent_last_name %>
-    <%= form.text_field :parent_last_name %>
-  </div>
-
-  <div class="field">
-    <%= form.label :occupation %>
-    <%= form.text_field :occupation %>
-  </div>
-
-  <div class="field">
-    <%= form.label :phone_number %>
-    <%= form.text_field :phone_number %>
-  </div>
-
-  <div class="field">
-    <%= form.label :relative_relation %>
-    <%= form.text_field :relative_relation %>
-  </div>
-
-  <div class="field">
-    <%= form.label :address %>
-    <%= form.text_field :address %>
-  </div>
-
-  <div class="field">
-    <%= form.label :med_description %>
-    <%= form.text_field :med_description %>
-  </div>
-
+  <div class="font-edit form-row" >
   
+
+
+  <div class="form-group">
+    <label for="comment"<%= form.label :medical_description %>
+    <textarea class="form-control med" id="exampleTextarea" rows="3"></textarea>
+  </div>
+  </div>
+  <div class="font-edit form-row" >
   <div class="actions homeFeaturesTitle">
     <%= form.submit "Apply" ,:class =>'btn-control font-edit'%>
   </div>
   </div>
+</div>
 <% end %>
 
