@@ -1,0 +1,75 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+<div class="container-fluid">
+<ul class="nav nav-bg img2-bg">
+  <li class="nav-item">
+    <div class="nav-link active" >
+    
+    </div>
+  </li>
+  </ul>
+  </div>
+  <div class="container pt-5 mt-5">
+  
+<p id="notice"><%= notice %></p>
+<div class ='btn-control font-edit'>
+<table>
+<tr class="row">
+ <td class="col-6"> <strong class="field form-group font-edit">Student first name:</strong> </td>
+ <td class="col-6><%= @apply.student_first_name %></td>
+</tr>
+
+<p>
+  <strong class="field form-group font-edit">Student last name:</strong>
+  <%= @apply.student_last_name %>
+</p>
+
+<p>
+  <strong class="field form-group font-edit">Birth date:</strong>
+  <%= @apply.birth_date %>
+</p>
+
+<p>
+  <strong class="field form-group font-edit">Parent first name:</strong>
+  <%= @apply.parent_first_name %>
+</p>
+
+<p>
+  <strong class="field form-group font-edit">Parent last name:</strong>
+  <%= @apply.parent_last_name %>
+</p>
+
+<p>
+  <strong class="field form-group font-edit">Occupation:</strong>
+  <%= @apply.occupation %>
+</p>
+
+<p>
+  <strong class="field form-group font-edit">Phone number:</strong>
+  <%= @apply.phone_number %>
+</p>
+
+<p>
+  <strong class="field form-group font-edit">Relative relation:</strong>
+  <%= @apply.relative_relation %>
+</p>
+
+<p>
+  <strong class="field form-group font-edit">Address:</strong>
+  <%= @apply.address %>
+</p>
+
+<p>
+  <strong class="field form-group font-edit">Med description:</strong>
+  <%= @apply.med_description %>
+  
+</p>
+</table>
+</div>
+<%= link_to 'Edit', edit_apply_path(@apply) %> |
+<%= link_to 'Back', applies_path %>
+</div>
+</div>
+</div>
+</div>
