@@ -4,7 +4,7 @@
     width: 450px;
 }
 .last{
-    text-align: center
+    text-align: center;
 }
 .theBox{
     width: 1400px;
@@ -72,22 +72,27 @@ img-bg{
     border: solid 6px #ffb511;
     position: relative;
     margin-bottom: 30px;
+ 
 }
 
 .homeFeaturesTitle1 {
     background-color: #ffb511;
-    text-align: center;
-    display: inline-block;
-    padding: 8px 41px;
-    font-size: 30px;
-    font-weight: 400;
+    /* display: inline-block; */
+    padding: 20px 41px;
+    /* font-size: 30px; */
+    /* font-weight: 400; */
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     border: solid 6px #ffb511;
-    position: relative;
-    margin-bottom: 30px;
-    width:250px;
-    height:100px;
-    
+    /* position: relative; */
+    /* margin-bottom: 30px; */
+    /* width: 250px; */
+    /* height: 100px; */
+    line-height: 2.7;
+}
+
+.homeFeaturesTitle1 a {
+    text-align: center;
+    display: block;
 }
 
 .btn-control{
@@ -127,7 +132,8 @@ img-bg{
     letter-spacing: .0325em;
     color: #009da5;
     word-wrap: break-word; // let the text to fit to the container 
-}
+}  
+
 strong{
     color: #ffb511; 
 }
@@ -177,9 +183,23 @@ strong{
 }
 
 body{
-    background: rgb(177, 199, 194);
+    // background: rgb(177, 199, 194);
+    background: #fff;
 }
 
 .center{
     padding-left: 150px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .font-edit{
+        font-size: 20px;
+    }
+  }
+
+@media screen and (min-width: 981px) {
+    .col-6 {
+        max-width: 350px;
+    }
 }
